@@ -1,9 +1,10 @@
 #root {
-  max-width: 1280px;
+  /*max-width: 1280px;*/
   margin: 0 auto;
   padding: 2rem;
   text-align: center;
 }
+
 
 .logo {
   height: 6em;
@@ -41,18 +42,22 @@
 }
 
 .App {
-  background-color: blueviolet;
+  background-color: rgb(246, 245, 248);
 }
 
 .userList{
   display: grid;
-  grid-template-columns: 1rem;
-  border-radius: 10%;
-  border-color: aqua;
- 
-
+  grid-gap: 1em;
+  grid-auto-rows: 12rem;
+  grid-template-columns: repeat(auto-fill, minmax(15rem, 1fr));
+  color: rgb(3, 3, 22);
 }
 
 .usersFrom {
   background-color:rgb(33, 200, 197);
+}
+
+.user {
+  background-color: rgba(244, 244, 248, 0.664);
+  border-radius: 10px;
 }
