@@ -1,4 +1,3 @@
-import axios, { Axios } from 'axios';
 import React, { useEffect } from 'react';
 import { useForm } from 'react-hook-form';
 import useAlert from '../hooks/useAlert';
@@ -88,7 +87,7 @@ const UsersForm = ({ userSelected, getUsers}) => {
 
     return (
         <form className='usersFrom' onSubmit={handleSubmit(submit)} >
-            <h2>usersfrom</h2>
+            <h2>New User</h2>
             <div>
                 <label htmlFor="first_name">First Name</label>
                 <input 

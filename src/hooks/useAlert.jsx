@@ -1,10 +1,7 @@
 import Swal from 'sweetalert2';
-//import useGetUsers from './useGetUsers';
-
 
 const useAlert = () => {
 
-    //const {getUsers} = useGetUsers();
 
     const confirmation = () => {
         Swal.fire({

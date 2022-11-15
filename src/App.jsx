@@ -3,7 +3,6 @@ import './App.css'
 import UsersList from './components/UsersList'
 import UsersForm from './components/UsersForm'
 import useGetUsers from './hooks/useGetUsers';
-import axios from 'axios';
 
 function App() {
 
@@ -11,14 +10,6 @@ function App() {
   //const [ users, setdata] = useState([]);
 
   const {data: users,getUsers} = useGetUsers();
-  
-
-    //funcion que sirve para mandar llamar datos de Api
-  // const getUsers = () => {
-  //   axios.get(`https://users-crud1.herokuapp.com/users/`)
-  //   .then( res => setdata(res.data))
-  // };
-
 
     //mandar llamaar API
   useEffect(() => {
@@ -30,8 +21,6 @@ function App() {
     setUserSelected(user)
   };
 
-    
-
   console.log(users)
   return (
     <div className="App">
@@ -42,8 +31,7 @@ function App() {
       <UsersList 
         users={users} 
         selecUsers={selecUsers} 
-        getUsers={getUsers}
-        
+        getUsers={getUsers}       
       />
     </div>
   )

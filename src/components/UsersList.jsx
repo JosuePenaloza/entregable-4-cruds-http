@@ -1,6 +1,5 @@
 import axios from "axios";
 import Swal from "sweetalert2";
-import useGetUsers from "../hooks/useGetUsers";
 
 const UsersList = ({users, selecUsers,getUsers}) => {
 
@@ -56,7 +55,6 @@ const UsersList = ({users, selecUsers,getUsers}) => {
               <li>{user.last_name}</li>
               <li>{user.email}</li>
               <li>{user.birthday}</li>
-              <li>{user.password}</li>
               <button  onClick={() => selecUsers(user)} >Select</button>
               <button onClick={() => deleteUser(user)} >Delet</button>
             </ul>
