@@ -1,8 +1,9 @@
 #root {
   /*max-width: 1280px;*/
   margin: 0 auto;
-  padding: 2rem;
+  padding: 1rem;
   text-align: center;
+  
 }
 
 
@@ -42,28 +43,42 @@
 }
 
 .App {
-  background-color: rgb(246, 245, 248);
-  padding: 5px;
+  background-color: #f2fcfe;
+  padding: auto;
 }
 
 .userList{
   display: grid;
-  grid-gap: 1em;
+  grid-gap: 2em;
   grid-auto-rows: 12rem;
   grid-template-columns: repeat(auto-fill, minmax(15rem, 1fr));
   color: rgb(3, 3, 22);
+  
 }
 
 .usersFrom {
-  background-color:rgb(33, 200, 197);
-  margin: 8px;
-  border-radius: 8px;
+  font-family: 'Roboto', sans-serif;
+    background-color: #b7dff3;
+    margin: 3em;
+    border-radius: 10px;
+    padding: 1px;
 }
 
 .user {
   background-color: rgba(244, 244, 248, 0.664);
   border-radius: 10px;
   box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2);
-  padding: 20px;
   border-radius: 15px;
 }
+
+ul {
+  list-style: none;
+}
+
+.ulLi {
+  display: flex;
+  justify-content: center;
+    flex-wrap: wrap;
+}
+
+

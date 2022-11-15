@@ -51,13 +51,13 @@ const UsersList = ({users, selecUsers,getUsers}) => {
         users.map(user => (
           <div className="user" key={user.id}>
             <ul key={user.id}>
-              <li>{user.first_name}</li>
-              <li>{user.last_name}</li>
-              <li>{user.email}</li>
-              <li>{user.birthday}</li>
-              <button  onClick={() => selecUsers(user)} >Select</button>
-              <button onClick={() => deleteUser(user)} >Delet</button>
+              <li><i className="fa-solid fa-circle-user"></i>  {user.first_name}</li>
+              <li><i className="fa-regular fa-circle-user"></i>  {user.last_name}</li>
+              <li><i className="fa-solid fa-square-envelope"></i> {user.email}</li>
+              <li><i className="fa-solid fa-cake-candles"></i> {user.birthday}</li>
             </ul>
+            <button  onClick={() => selecUsers(user)} ><i className="fa-regular fa-hand-pointer"></i></button>
+            <button onClick={() => deleteUser(user)} ><i className="fa-solid fa-trash-can"></i></button>
           </div>
         ))
       }    
